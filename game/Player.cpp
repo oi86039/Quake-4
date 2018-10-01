@@ -9032,12 +9032,12 @@ void idPlayer::Move( void ) {
 		}
 	}
 
-	if ( noclip || gameLocal.inCinematic || ( influenceActive == INFLUENCE_LEVEL2 ) ) {
+	if ( noclip || gameLocal.inCinematic || ( influenceActive == INFLUENCE_LEVEL2 ) ) { //noclip - ignore jump
 		pfl.crouch		= false;
  		pfl.onGround	= ( influenceActive == INFLUENCE_LEVEL2 );
 		pfl.onLadder	= false;
 		pfl.jump		= false;
-	} else {
+	} else {																			//if not noclip!
 		pfl.crouch	= physicsObj.IsCrouching();
 		pfl.onGround	= physicsObj.HasGroundContacts();
 		pfl.onLadder	= physicsObj.OnLadder();
@@ -9062,7 +9062,7 @@ void idPlayer::Move( void ) {
  		}
 	}
 
-	if ( pfl.jump ) {
+	if ( pfl.jump ) { //If jumping, Log it (I THINK??????)
 		loggedAccel_t	*acc = &loggedAccel[currentLoggedAccel&(NUM_LOGGED_ACCELS-1)];
 		currentLoggedAccel++;
 		acc->time = gameLocal.time;

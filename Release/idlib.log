@@ -712,12 +712,12 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Generating Code...
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2737): warning C4740: flow in or out of inline asm code suppresses global optimization
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2748): warning C4740: flow in or out of inline asm code suppresses global optimization
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2770): warning C4740: flow in or out of inline asm code suppresses global optimization
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2759): warning C4740: flow in or out of inline asm code suppresses global optimization
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2814): warning C4740: flow in or out of inline asm code suppresses global optimization
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2770): warning C4740: flow in or out of inline asm code suppresses global optimization
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2781): warning C4740: flow in or out of inline asm code suppresses global optimization
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2792): warning C4740: flow in or out of inline asm code suppresses global optimization
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2803): warning C4740: flow in or out of inline asm code suppresses global optimization
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2781): warning C4740: flow in or out of inline asm code suppresses global optimization
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2814): warning C4740: flow in or out of inline asm code suppresses global optimization
 TextCompiler.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 rvMemSys.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
 rvHeapArena.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library

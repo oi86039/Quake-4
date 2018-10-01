@@ -1271,12 +1271,12 @@ void idPhysics_Player::CheckLadder( void ) {
 idPhysics_Player::CheckJump
 =============
 */
-bool idPhysics_Player::CheckJump( void ) {
+bool idPhysics_Player::CheckJump( void ) { //IMPORTANT JUMPING CHECK
 	idVec3 addVelocity;
 
 	if ( command.upmove < 10 ) {
 		// not holding jump
-		return false;
+		return false;		//Return false = dont jump
 	}
 
 	// must wait for jump to be released
@@ -1289,20 +1289,20 @@ bool idPhysics_Player::CheckJump( void ) {
 		return false;
 	}
 
-	groundPlane = false;		// jumping away
-	walking = false;
-	current.movementFlags |= PMF_JUMP_HELD | PMF_JUMPED;
+	groundPlane = false;		// jumping away (NOT ON GROUND)
+	walking = false;			//IN AIR CAN'T WALK
+	current.movementFlags |= PMF_JUMP_HELD | PMF_JUMPED;	//JUMPING IS ONLY MOVEMENT
 
-	addVelocity = 2.0f * maxJumpHeight * -gravityVector;
-	addVelocity *= idMath::Sqrt( addVelocity.Normalize() );
-	current.velocity += addVelocity;
+	addVelocity = 2.0f * maxJumpHeight * -gravityVector;     //Actual act of jumping up
+	addVelocity *= idMath::Sqrt( addVelocity.Normalize() );  //Multiplier
+	current.velocity += addVelocity;	//Add upward velocity to current velocity
 
 // RAVEN BEGIN
 // bdube: crouch slide, nick maggoire is awesome
-	current.crouchSlideTime = 0;
+	current.crouchSlideTime = 0;		//No sliding in air
 // RAVEN END
 
-	return true;
+	return true;	//Allow Jump
 }
 
 /*
@@ -1612,7 +1612,7 @@ idPhysics_Player::HasJumped
 ================
 */
 bool idPhysics_Player::HasJumped( void ) const {
-	return ( ( current.movementFlags & PMF_JUMPED ) != 0 );
+	return ( ( current.movementFlags & PMF_JUMPED ) != 0 ); //True if jumped (i think???)
 }
 
 /*
