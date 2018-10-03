@@ -35,6 +35,9 @@ const float OVERCLIP			= 1.001f;
 // movementFlags
 const int PMF_DUCKED			= 1;		// set when ducking
 const int PMF_JUMPED			= 2;		// set when the player jumped this frame
+//OMAR START
+const int PMF_DOUBLEJUMPED = 2;		// set when the player jumped this frame
+///OMAR END
 const int PMF_STEPPED_UP		= 4;		// set when the player stepped up this frame
 const int PMF_STEPPED_DOWN		= 8;		// set when the player stepped down this frame
 const int PMF_JUMP_HELD			= 16;		// set when jump button is held down
@@ -1273,7 +1276,8 @@ idPhysics_Player::CheckJump
 */
 bool idPhysics_Player::CheckJump( void ) { //IMPORTANT JUMPING CHECK
 	idVec3 addVelocity;
-
+	
+	//DISABLE JUMP IF.... (MOVING UPWARD, UNRELEASED JUMP BUTTON, OR DUCKING)
 	if ( command.upmove < 10 ) {
 		// not holding jump
 		return false;		//Return false = dont jump
@@ -1288,9 +1292,12 @@ bool idPhysics_Player::CheckJump( void ) { //IMPORTANT JUMPING CHECK
 	if ( current.movementFlags & PMF_DUCKED ) {
 		return false;
 	}
-
+	//IF ALL OF ABOVE ARE GOOD, THEN RUN JUMP
 	groundPlane = false;		// jumping away (NOT ON GROUND)
 	walking = false;			//IN AIR CAN'T WALK
+	//OMAR START
+	
+	//OMAR END
 	current.movementFlags |= PMF_JUMP_HELD | PMF_JUMPED;	//JUMPING IS ONLY MOVEMENT
 
 	addVelocity = 2.0f * maxJumpHeight * -gravityVector;     //Actual act of jumping up
@@ -1614,6 +1621,17 @@ idPhysics_Player::HasJumped
 bool idPhysics_Player::HasJumped( void ) const {
 	return ( ( current.movementFlags & PMF_JUMPED ) != 0 ); //True if jumped (i think???)
 }
+
+//OMAR START (GOD HELP)
+/*
+================
+idPhysics_Player::HasDoubleJumped
+================
+*/
+bool idPhysics_Player::HasDoubleJumped(void) const {
+	return ((current.movementFlags & PMF_DOUBLEJUMPED) != 0); //True if jumped (i think???)
+}
+//OMAR END
 
 /*
 ================

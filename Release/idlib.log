@@ -331,19 +331,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\lexer.cpp(2761): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1467): note: see declaration of 'vsprintf'
   LexerFactory.cpp
-  mapfile.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(726): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1084): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.h(238): note: see declaration of 'idMapFile::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1197): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1265): warning C4456: declaration of 'mapEnt' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1224): note: see declaration of 'mapEnt'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1266): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.h(238): note: see declaration of 'idMapFile::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1307): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
   Parser.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\parser.cpp(143): warning C4458: declaration of 'definehash' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\parser.h(160): note: see declaration of 'idParser::definehash'
@@ -483,9 +470,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\parser.h(154): note: see declaration of 'idParser::OSPath'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\parser.cpp(3044): warning C4458: declaration of 'token' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\parser.h(163): note: see declaration of 'idParser::token'
-  rvHeap.cpp
-  rvHeapArena.cpp
-  rvMemSys.cpp
   Str.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\str.cpp(217): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(132): note: see declaration of 'strcpy'
@@ -523,8 +507,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Token.cpp
   Bounds.cpp
   Box.cpp
-  Generating Code...
-  Compiling...
   Frustum.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\bv\frustum.cpp(1177): warning C4458: declaration of 'dFar' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\bv\frustum.h(94): note: see declaration of 'idFrustum::dFar'
@@ -535,6 +517,8 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Sphere.cpp
   HashIndex.cpp
   JointTransform.cpp
+  Generating Code...
+  Compiling...
   Surface.cpp
   Surface_Patch.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\geometry\surface_patch.cpp(450): warning C4458: declaration of 'width' hides class member
@@ -664,6 +648,25 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\geometry\tracemodel.h(61): note: see declaration of 'idTraceModel::verts'
   Winding.cpp
   Winding2D.cpp
+  CRC16.cpp
+  CRC32.cpp
+  CRC8.cpp
+  Honeyman.cpp
+  MD4.cpp
+  MD5.cpp
+  mapfile.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(726): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1084): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.h(238): note: see declaration of 'idMapFile::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1197): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1265): warning C4456: declaration of 'mapEnt' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1224): note: see declaration of 'mapEnt'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1266): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.h(238): note: see declaration of 'idMapFile::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\mapfile.cpp(1307): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
   Angles.cpp
   Complex.cpp
   FFT.cpp
@@ -682,13 +685,13 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\matrix.h(1548): note: see declaration of 'idMat6::mat'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\matrix.cpp(6755): warning C4456: declaration of 'm' hides previous local declaration
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\matrix.cpp(6696): note: see declaration of 'm'
-  Ode.cpp
-  Plane.cpp
-  Pluecker.cpp
   Generating Code...
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\matrix.cpp(3782): warning C4750: 'class idMatX & __thiscall idMatX::SwapRows(int,int)': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\lcp.cpp(640): warning C4750: 'void __thiscall idLCP_Square::CalcForceDelta(int,float)': function with _alloca() inlined into a loop
   Compiling...
+  Ode.cpp
+  Plane.cpp
+  Pluecker.cpp
   Polynomial.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\polynomial.cpp(12): warning C4458: declaration of 'degree' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\polynomial.h(69): note: see declaration of 'idPolynomial::degree'
@@ -697,18 +700,15 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Rotation.cpp
   Simd.cpp
   Simd_3DNow.cpp
-  Simd_generic.cpp
   Simd_MMX.cpp
   Simd_SSE.cpp
   Simd_SSE2.cpp
   Simd_SSE3.cpp
+  Simd_generic.cpp
   Vector.cpp
-  CRC16.cpp
-  CRC32.cpp
-  CRC8.cpp
-  Honeyman.cpp
-  MD4.cpp
-  MD5.cpp
+  rvHeap.cpp
+  rvHeapArena.cpp
+  rvMemSys.cpp
   Generating Code...
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2737): warning C4740: flow in or out of inline asm code suppresses global optimization
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\simd_sse.cpp(2748): warning C4740: flow in or out of inline asm code suppresses global optimization

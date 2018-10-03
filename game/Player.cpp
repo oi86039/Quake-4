@@ -9042,6 +9042,9 @@ void idPlayer::Move( void ) {
 		pfl.onGround	= physicsObj.HasGroundContacts();
 		pfl.onLadder	= physicsObj.OnLadder();
 		pfl.jump		= physicsObj.HasJumped();
+		//OMAR START
+		pfl.doublejump = physicsObj.HasDoubleJumped();
+		//OMAR END
 
  		// check if we're standing on top of a monster and give a push if we are
  		idEntity *groundEnt = physicsObj.GetGroundEntity();

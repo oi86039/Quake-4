@@ -73,6 +73,9 @@ public:
 	waterLevel_t			GetWaterLevel( void ) const;
 	int						GetWaterType( void ) const;
 	bool					HasJumped( void ) const;
+	//OMAR START
+	bool					HasDoubleJumped(void) const;
+	//OMAR END
 	bool					HasSteppedUp( void ) const;
 	float					GetStepUp( void ) const;
 	bool					IsCrouching( void ) const;

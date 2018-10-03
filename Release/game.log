@@ -259,15 +259,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\af.cpp(1321): warning C4458: declaration of 'name' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\af.h(74): note: see declaration of 'idAF::name'
-  Actor.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(1198): warning C4458: declaration of 'animator' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(783): note: see declaration of 'idAnimatedEntity::animator'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(2382): warning C4458: declaration of 'damageScale' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(3690): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(3756): warning C4458: declaration of 'damageScale' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
   AFEntity.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\afentity.cpp(122): warning C4458: declaration of 'name' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
@@ -279,6 +270,15 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\afentity.h(370): note: see declaration of 'idAFEntity_Vehicle::steerAngle'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\afentity.cpp(3103): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
+  Actor.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(1198): warning C4458: declaration of 'animator' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(783): note: see declaration of 'idAnimatedEntity::animator'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(2382): warning C4458: declaration of 'damageScale' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(3690): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.cpp(3756): warning C4458: declaration of 'damageScale' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
   BrittleFracture.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\brittlefracture.cpp(331): warning C4458: declaration of 'renderEntity' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(526): note: see declaration of 'idEntity::renderEntity'
@@ -346,7 +346,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(44): note: see declaration of 'idInterpolate<float>::startValue'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'endValue' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(45): note: see declaration of 'idInterpolate<float>::endValue'
-  ClientAFEntity.cpp
   Effect.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\effect.cpp(121): warning C4458: declaration of 'name' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
@@ -393,9 +392,17 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2306): note: while compiling class template member function 'void idCurve_NonUniformBSpline<idVec3>::BasisSecondDerivative(const int,const int,const float,float *) const'
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2244): note: see reference to function template instantiation 'void idCurve_NonUniformBSpline<idVec3>::BasisSecondDerivative(const int,const int,const float,float *) const' being compiled
   FreeView.cpp
+  GameEdit.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.cpp(314): warning C4458: declaration of 'bodyName' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.h(57): note: see declaration of 'idDragEntity::bodyName'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.cpp(336): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
   Game_Debug.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_debug.cpp(337): warning C4458: declaration of 'jumpIndex' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_debug.h(75): note: see declaration of 'rvGameDebug::jumpIndex'
+  Game_Log.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_log.cpp(146): warning C4456: declaration of 'out' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_log.cpp(90): note: see declaration of 'out'
   Game_local.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_local.cpp(1157): warning C4458: declaration of 'userInfo' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_local.h(326): note: see declaration of 'idGameLocal::userInfo'
@@ -439,9 +446,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(337): note: see declaration of 'strncpy'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_local.cpp(8321): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(337): note: see declaration of 'strncpy'
-  Game_Log.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_log.cpp(146): warning C4456: declaration of 'out' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_log.cpp(90): note: see declaration of 'out'
   Game_network.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_network.cpp(92): warning C4458: declaration of 'numClients' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_local.h(325): note: see declaration of 'idGameLocal::numClients'
@@ -457,14 +461,7 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(337): note: see declaration of 'strncpy'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\game_network.cpp(2286): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(337): note: see declaration of 'strncpy'
-  GameEdit.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.cpp(314): warning C4458: declaration of 'bodyName' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.h(57): note: see declaration of 'idDragEntity::bodyName'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gameedit.cpp(336): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(2261): note: see declaration of 'sscanf'
   Healing_Station.cpp
-  Icon.cpp
-  IconManager.cpp
   IK.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ik.cpp(97): warning C4458: declaration of 'self' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ik.h(35): note: see declaration of 'idIK::self'
@@ -478,6 +475,8 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ik.h(35): note: see declaration of 'idIK::self'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ik.cpp(886): warning C4458: declaration of 'modelOffset' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ik.h(38): note: see declaration of 'idIK::modelOffset'
+  Icon.cpp
+  IconManager.cpp
   Instance.cpp
   Item.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\item.cpp(159): warning C4458: declaration of 'renderEntity' hides class member
@@ -491,9 +490,9 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Light.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\light.cpp(478): warning C4458: declaration of 'lightGUI' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\light.h(93): note: see declaration of 'idLight::lightGUI'
+  LipSync.cpp
   Generating Code...
   Compiling...
-  LipSync.cpp
   Misc.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\misc.cpp(102): warning C4458: declaration of 'entityNumber' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(114): note: see declaration of 'idEntity::entityNumber'
@@ -583,7 +582,117 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\multiplayergame.cpp(6637): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(132): note: see declaration of 'strcpy'
   Playback.cpp
+  Player.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(2719): warning C4458: declaration of 'skin' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(864): note: see declaration of 'idPlayer::skin'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3453): warning C4458: declaration of 'hud' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(344): note: see declaration of 'idPlayer::hud'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3454): warning C4458: declaration of 'mphud' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(345): note: see declaration of 'idPlayer::mphud'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3455): warning C4458: declaration of 'cursor' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(925): note: see declaration of 'idPlayer::cursor'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3617): warning C4458: declaration of 'cursor' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(925): note: see declaration of 'idPlayer::cursor'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3928): warning C4458: declaration of 'weaponDef' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(341): note: see declaration of 'idPlayer::weaponDef'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4246): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4624): warning C4458: declaration of 'team' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(120): note: see declaration of 'idActor::team'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4819): warning C4458: declaration of 'hud' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(344): note: see declaration of 'idPlayer::hud'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4932): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4815): note: see declaration of 'i'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5075): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5288): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5305): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(6683): warning C4456: declaration of 'end' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(6629): note: see declaration of 'end'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9670): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9962): warning C4458: declaration of 'damageScale' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9962): warning C4458: declaration of 'health' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(137): note: see declaration of 'idEntity::health'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10062): warning C4458: declaration of 'damageScale' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10205): warning C4457: declaration of 'attacker' hides function parameter
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10061): note: see declaration of 'attacker'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10471): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10604): warning C4458: declaration of 'viewAxis' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(123): note: see declaration of 'idActor::viewAxis'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11116): warning C4458: declaration of 'viewAxis' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(123): note: see declaration of 'idActor::viewAxis'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11234): warning C4458: declaration of 'cursor' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(925): note: see declaration of 'idPlayer::cursor'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11601): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11654): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12407): warning C4458: declaration of 'arena' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(965): note: see declaration of 'idPlayer::arena'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12698): warning C4458: declaration of 'team' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(120): note: see declaration of 'idActor::team'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12995): warning C4458: declaration of 'weapon' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weapon'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(13018): warning C4458: declaration of 'types' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\class.h(409): note: see declaration of 'idClass::types'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'startTime' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(42): note: see declaration of 'idInterpolate<float>::startTime'
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): note: while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
+          with
+          [
+              type=float
+          ]
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(1200): note: see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
+          with
+          [
+              type=float
+          ]
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(972): note: while compiling class template member function 'type idCurve_Spline<type>::ValueForIndex(const int) const'
+          with
+          [
+              type=idAngles
+          ]
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2018): note: see reference to function template instantiation 'type idCurve_Spline<type>::ValueForIndex(const int) const' being compiled
+          with
+          [
+              type=idAngles
+          ]
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2003): note: while compiling class template member function 'type idCurve_UniformCubicBSpline<type>::GetCurrentValue(const float) const'
+          with
+          [
+              type=idAngles
+          ]
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'duration' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(43): note: see declaration of 'idInterpolate<float>::duration'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'startValue' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(44): note: see declaration of 'idInterpolate<float>::startValue'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'endValue' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(45): note: see declaration of 'idInterpolate<float>::endValue'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(108): warning C4458: declaration of 'startTime' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(42): note: see declaration of 'idInterpolate<idVec3>::startTime'
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(108): note: while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
+          with
+          [
+              type=idVec3
+          ]
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(2231): note: see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
+  PlayerView.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(496): warning C4458: declaration of 'view' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(597): warning C4458: declaration of 'view' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(712): warning C4458: declaration of 'view' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(746): warning C4458: declaration of 'view' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
   Player_Cheats.cpp
+  Player_States.cpp
   Projectile.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\projectile.cpp(556): warning C4458: declaration of 'speed' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\projectile.h(96): note: see declaration of 'idProjectile::speed'
@@ -784,9 +893,45 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(45): note: see declaration of 'idInterpolate<int>::endValue'
   TramGate.cpp
   Trigger.cpp
+  Weapon.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(207): warning C4458: declaration of 'name' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2329): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2505): warning C4458: declaration of 'spread' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2506): warning C4458: declaration of 'muzzleOrigin' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2507): warning C4458: declaration of 'muzzleAxis' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'muzzleOrigin' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'muzzleAxis' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'spread' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2641): warning C4456: declaration of 'dir' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2617): note: see declaration of 'dir'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'muzzleOrigin' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'muzzleAxis' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'spread' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
   WorldSpawn.cpp
   AAS.cpp
-  AAS_debug.cpp
+  Generating Code...
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(326): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mover.cpp(2142): warning C4750: 'float __thiscall idCurve<class idVec3>::GetTimeForLength(float,float)const ': function with _alloca() inlined into a loop
+  Compiling...
   AAS_Find.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\aas_find.cpp(58): warning C4458: declaration of 'PVSAreas' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\aas_find.h(33): note: see declaration of 'rvAASFindGoalForHide::PVSAreas'
@@ -796,19 +941,8 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\aas_find.cpp(176): note: see declaration of 'localPoint'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\aas_find.cpp(195): warning C4456: declaration of 'bestZ' hides previous local declaration
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\aas_find.cpp(177): note: see declaration of 'bestZ'
+  AAS_debug.cpp
   AAS_pathing.cpp
-  Generating Code...
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(326): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mover.cpp(2142): warning C4750: 'float __thiscall idCurve<class idVec3>::GetTimeForLength(float,float)const ': function with _alloca() inlined into a loop
-  Compiling...
   AAS_routing.cpp
   AAS_tactical.cpp
   AI.cpp
@@ -827,9 +961,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   AI_Actions.cpp
   AI_Announcements.cpp
   AI_Debug.cpp
-  AI_events.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_events.cpp(599): warning C4458: declaration of 'af' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\afentity.h(227): note: see declaration of 'idAFEntity_Base::af'
   AI_Manager.cpp
   AI_Medic.cpp
   AI_Move.cpp
@@ -839,12 +970,15 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_move.cpp(1725): note: see declaration of 'end'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_move.cpp(3400): warning C4456: declaration of 'area' hides previous local declaration
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_move.cpp(3315): note: see declaration of 'area'
-  AI_pathing.cpp
   AI_States.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_states.cpp(792): warning C4458: declaration of 'head' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(309): note: see declaration of 'idActor::head'
   AI_Tactical.cpp
   AI_Util.cpp
+  AI_events.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\ai_events.cpp(599): warning C4458: declaration of 'af' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\afentity.h(227): note: see declaration of 'idAFEntity_Base::af'
+  AI_pathing.cpp
   Monster_Berserker.cpp
   Monster_BossBuddy.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_bossbuddy.cpp(370): warning C4458: declaration of 'damageScale' hides class member
@@ -852,6 +986,8 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Monster_BossMakron.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_bossmakron.cpp(974): warning C4458: declaration of 'damageScale' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
+  Generating Code...
+  Compiling...
   Monster_ConvoyGround.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_convoyground.cpp(244): warning C4458: declaration of 'damageScale' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
@@ -859,8 +995,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_convoyhover.cpp(252): warning C4458: declaration of 'maxHeight' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_convoyhover.cpp(47): note: see declaration of 'rvMonsterConvoyHover::maxHeight'
   Monster_FailedTransfer.cpp
-  Generating Code...
-  Compiling...
   Monster_Fatty.cpp
   Monster_Gladiator.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_gladiator.cpp(486): warning C4458: declaration of 'damageScale' hides class member
@@ -890,15 +1024,12 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_strogghover.cpp(1076): warning C4456: declaration of 'vel' hides previous local declaration
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\ai\monster_strogghover.cpp(1062): note: see declaration of 'vel'
+  Generating Code...
+  Compiling...
   Monster_StroggMarine.cpp
   Monster_TeleportDropper.cpp
   Monster_Turret.cpp
-  Generating Code...
-  Compiling...
   Monster_TurretFlying.cpp
-  spawner.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\spawner.cpp(291): warning C4458: declaration of 'types' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\class.h(409): note: see declaration of 'idClass::types'
   VehicleAI.cpp
   Anim.cpp
   Anim_Blend.cpp
@@ -1004,6 +1135,7 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\anim\anim_testmodel.cpp(248): note: see declaration of 'axis'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\anim\anim_testmodel.cpp(540): warning C4458: declaration of 'name' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
+  ClientAFEntity.cpp
   ClientEffect.cpp
   ClientEntity.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\client\cliententity.cpp(362): warning C4458: declaration of 'physics' hides class member
@@ -1168,9 +1300,47 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\syscmds.cpp(1895): warning C4456: declaration of 'animator' hides previous local declaration
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\syscmds.cpp(1889): note: see declaration of 'animator'
+  Generating Code...
+  Compiling...
   SysCvar.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\syscvar.cpp(35): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+  Buying.cpp
+  CTF.cpp
+  GameState.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(459): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(483): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(617): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(641): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2617): warning C4458: declaration of 'round' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(333): note: see declaration of 'rvTourneyGameState::round'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2716): warning C4458: declaration of 'type' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(91): note: see declaration of 'rvGameState::type'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2720): warning C4458: declaration of 'type' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(121): note: see declaration of 'rvDMGameState::type'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2724): warning C4458: declaration of 'type' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(143): note: see declaration of 'rvTeamDMGameState::type'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2728): warning C4458: declaration of 'type' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(215): note: see declaration of 'rvCTFGameState::type'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2732): warning C4458: declaration of 'type' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(351): note: see declaration of 'rvTourneyGameState::type'
+  Tourney.cpp
+  VoiceComms.cpp
+  StatEvent.cpp
+  StatManager.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(914): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(505): note: see declaration of 'localtime'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(915): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(116): note: see declaration of 'asctime'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(1097): warning C4458: declaration of 'playerStats' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.h(315): note: see declaration of 'rvStatManager::playerStats'
+  StatWindow.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statwindow.cpp(58): warning C4456: declaration of 'player' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statwindow.cpp(32): note: see declaration of 'player'
   Clip.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\clip.cpp(405): warning C4458: declaration of 'renderModelHandle' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\clip.h(107): note: see declaration of 'idClipModel::renderModelHandle'
@@ -1181,8 +1351,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\clip.cpp(1779): warning C4458: declaration of 'numContacts' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\clip.h(349): note: see declaration of 'idClip::numContacts'
   Force.cpp
-  Generating Code...
-  Compiling...
   Force_Constant.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\force_constant.cpp(59): warning C4458: declaration of 'physics' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\force_constant.h(39): note: see declaration of 'idForce_Constant::physics'
@@ -1226,7 +1394,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\force_spring.cpp(53): warning C4458: declaration of 'p2' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\force_spring.h(47): note: see declaration of 'idForce_Spring::p2'
   Physics.cpp
-  Physics_Actor.cpp
   Physics_AF.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_af.cpp(600): warning C4458: declaration of 'e' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_af.h(98): note: see declaration of 'idAFConstraint::e'
@@ -1272,12 +1439,15 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_af.h(920): note: see declaration of 'idPhysics_AF::noMoveRotation'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_af.cpp(7406): warning C4458: declaration of 'contacts' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_base.h(144): note: see declaration of 'idPhysics_Base::contacts'
+  Physics_Actor.cpp
   Physics_Base.cpp
   Physics_Monster.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_monster.cpp(66): warning C4458: declaration of 'delta' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_monster.h(111): note: see declaration of 'idPhysics_Monster::delta'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_monster.cpp(108): warning C4458: declaration of 'delta' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_monster.h(111): note: see declaration of 'idPhysics_Monster::delta'
+  Generating Code...
+  Compiling...
   Physics_Parametric.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(186): warning C4458: declaration of 'startValue' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(206): note: see declaration of 'idInterpolateAccelDecelLinear<idAngles>::startValue'
@@ -1343,122 +1513,11 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   Physics_StaticMulti.cpp
   Physics_VehicleMonster.cpp
   Push.cpp
-  Player.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(2719): warning C4458: declaration of 'skin' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(861): note: see declaration of 'idPlayer::skin'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3453): warning C4458: declaration of 'hud' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(341): note: see declaration of 'idPlayer::hud'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3454): warning C4458: declaration of 'mphud' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(342): note: see declaration of 'idPlayer::mphud'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3455): warning C4458: declaration of 'cursor' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(922): note: see declaration of 'idPlayer::cursor'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3617): warning C4458: declaration of 'cursor' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(922): note: see declaration of 'idPlayer::cursor'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(3928): warning C4458: declaration of 'weaponDef' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(338): note: see declaration of 'idPlayer::weaponDef'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4246): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4624): warning C4458: declaration of 'team' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(120): note: see declaration of 'idActor::team'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4819): warning C4458: declaration of 'hud' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(341): note: see declaration of 'idPlayer::hud'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4932): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(4815): note: see declaration of 'i'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5075): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5288): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(5305): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(6683): warning C4456: declaration of 'end' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(6629): note: see declaration of 'end'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9667): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9959): warning C4458: declaration of 'damageScale' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(9959): warning C4458: declaration of 'health' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(137): note: see declaration of 'idEntity::health'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10059): warning C4458: declaration of 'damageScale' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10202): warning C4457: declaration of 'attacker' hides function parameter
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10058): note: see declaration of 'attacker'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10468): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(10601): warning C4458: declaration of 'viewAxis' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(123): note: see declaration of 'idActor::viewAxis'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11113): warning C4458: declaration of 'viewAxis' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(123): note: see declaration of 'idActor::viewAxis'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11231): warning C4458: declaration of 'cursor' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(922): note: see declaration of 'idPlayer::cursor'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11598): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(11651): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12404): warning C4458: declaration of 'arena' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(962): note: see declaration of 'idPlayer::arena'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12695): warning C4458: declaration of 'team' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(120): note: see declaration of 'idActor::team'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(12992): warning C4458: declaration of 'weapon' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.h(335): note: see declaration of 'idPlayer::weapon'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(13015): warning C4458: declaration of 'types' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\class.h(409): note: see declaration of 'idClass::types'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'startTime' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(42): note: see declaration of 'idInterpolate<float>::startTime'
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): note: while compiling class template member function 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)'
-          with
-          [
-              type=float
-          ]
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(1200): note: see reference to function template instantiation 'void idInterpolate<float>::Init(const float,const float,const type &,const type &)' being compiled
-          with
-          [
-              type=float
-          ]
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(972): note: while compiling class template member function 'type idCurve_Spline<type>::ValueForIndex(const int) const'
-          with
-          [
-              type=idAngles
-          ]
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2018): note: see reference to function template instantiation 'type idCurve_Spline<type>::ValueForIndex(const int) const' being compiled
-          with
-          [
-              type=idAngles
-          ]
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(2003): note: while compiling class template member function 'type idCurve_UniformCubicBSpline<type>::GetCurrentValue(const float) const'
-          with
-          [
-              type=idAngles
-          ]
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'duration' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(43): note: see declaration of 'idInterpolate<float>::duration'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'startValue' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(44): note: see declaration of 'idInterpolate<float>::startValue'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(68): warning C4458: declaration of 'endValue' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(45): note: see declaration of 'idInterpolate<float>::endValue'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(108): warning C4458: declaration of 'startTime' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(42): note: see declaration of 'idInterpolate<idVec3>::startTime'
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(108): note: while compiling class template member function 'type idInterpolate<type>::GetDeltaValue(float,float) const'
-          with
-          [
-              type=idVec3
-          ]
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\player.cpp(2231): note: see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
-  Player_States.cpp
-  PlayerView.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(496): warning C4458: declaration of 'view' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(597): warning C4458: declaration of 'view' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(712): warning C4458: declaration of 'view' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.cpp(746): warning C4458: declaration of 'view' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\playerview.h(138): note: see declaration of 'idPlayerView::view'
-  Generating Code...
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
-  Compiling...
+  ScriptFuncUtility.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.cpp(223): warning C4458: declaration of 'func' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.h(66): note: see declaration of 'rvScriptFuncUtility::func'
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.cpp(232): warning C4458: declaration of 'parms' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.h(67): note: see declaration of 'rvScriptFuncUtility::parms'
   Script_Compiler.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(226): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1467): note: see declaration of 'vsprintf'
@@ -1496,11 +1555,9 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_thread.cpp(935): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1467): note: see declaration of 'vsprintf'
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_thread.cpp(2211): warning C4091: 'typedef ': ignored on left of 'idThread::Event_SendNamedEvent::<unnamed-enum-SNE_PLAYERHUD>' when no variable is declared
-  ScriptFuncUtility.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.cpp(223): warning C4458: declaration of 'func' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.h(66): note: see declaration of 'rvScriptFuncUtility::func'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.cpp(232): warning C4458: declaration of 'parms' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\scriptfuncutility.h(67): note: see declaration of 'rvScriptFuncUtility::parms'
+  spawner.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\spawner.cpp(291): warning C4458: declaration of 'types' hides class member
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\gamesys\class.h(409): note: see declaration of 'idClass::types'
   Vehicle.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicle.cpp(860): warning C4458: declaration of 'damageScale' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\actor.h(277): note: see declaration of 'idActor::damageScale'
@@ -1549,8 +1606,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
               type=idVec3
           ]
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicle.cpp(186): note: see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
-  Vehicle_DropPod.cpp
-  Vehicle_Walker.cpp
   VehicleAnimated.cpp
   VehicleController.cpp
   VehicleDriver.cpp
@@ -1607,39 +1662,6 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
               type=idVec3
           ]
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicleparts.cpp(322): note: see reference to class template instantiation 'idInterpolate<idVec3>' being compiled
-  VehiclePosition.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicleposition.cpp(534): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicleposition.cpp(507): note: see declaration of 'i'
-  VehicleRigid.cpp
-  VehicleSpline.cpp
-  VehicleStatic.cpp
-  Weapon.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(207): warning C4458: declaration of 'name' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\entity.h(124): note: see declaration of 'idEntity::name'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2329): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2505): warning C4458: declaration of 'spread' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2506): warning C4458: declaration of 'muzzleOrigin' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2507): warning C4458: declaration of 'muzzleAxis' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'muzzleOrigin' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'muzzleAxis' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2612): warning C4458: declaration of 'spread' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2641): warning C4456: declaration of 'dir' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2617): note: see declaration of 'dir'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'muzzleOrigin' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(328): note: see declaration of 'rvWeapon::muzzleOrigin'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'muzzleAxis' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(329): note: see declaration of 'rvWeapon::muzzleAxis'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.cpp(2740): warning C4458: declaration of 'spread' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\weapon.h(336): note: see declaration of 'rvWeapon::spread'
-  WeaponBlaster.cpp
-  WeaponDarkMatterGun.cpp
   Generating Code...
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(347): warning C4702: unreachable code
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(1008): warning C4702: unreachable code
@@ -1647,7 +1669,21 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(1336): warning C4702: unreachable code
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(1347): warning C4702: unreachable code
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\script\script_compiler.cpp(1379): warning C4702: unreachable code
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
   Compiling...
+  VehiclePosition.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicleposition.cpp(534): warning C4456: declaration of 'i' hides previous local declaration
+  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\vehicle\vehicleposition.cpp(507): note: see declaration of 'i'
+  VehicleRigid.cpp
+  VehicleSpline.cpp
+  VehicleStatic.cpp
+  Vehicle_DropPod.cpp
+  Vehicle_Walker.cpp
+  WeaponBlaster.cpp
+  WeaponDarkMatterGun.cpp
   WeaponGauntlet.cpp
   WeaponGrenadeLauncher.cpp
   WeaponHyperblaster.cpp
@@ -1770,86 +1806,8 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   WeaponRailgun.cpp
   WeaponRocketLauncher.cpp
   WeaponShotgun.cpp
-  Buying.cpp
-  CTF.cpp
-  GameState.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(459): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(483): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(617): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(641): warning C4456: declaration of 'i' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(402): note: see declaration of 'i'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2617): warning C4458: declaration of 'round' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(333): note: see declaration of 'rvTourneyGameState::round'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2716): warning C4458: declaration of 'type' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(91): note: see declaration of 'rvGameState::type'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2720): warning C4458: declaration of 'type' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(121): note: see declaration of 'rvDMGameState::type'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2724): warning C4458: declaration of 'type' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(143): note: see declaration of 'rvTeamDMGameState::type'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2728): warning C4458: declaration of 'type' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(215): note: see declaration of 'rvCTFGameState::type'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.cpp(2732): warning C4458: declaration of 'type' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\gamestate.h(351): note: see declaration of 'rvTourneyGameState::type'
-  Tourney.cpp
-  VoiceComms.cpp
-  StatEvent.cpp
-  StatManager.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(914): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(505): note: see declaration of 'localtime'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(915): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(116): note: see declaration of 'asctime'
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.cpp(1097): warning C4458: declaration of 'playerStats' hides class member
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statmanager.h(315): note: see declaration of 'rvStatManager::playerStats'
-  StatWindow.cpp
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statwindow.cpp(58): warning C4456: declaration of 'player' hides previous local declaration
-  c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mp\stats\statwindow.cpp(32): note: see declaration of 'player'
   Generating Code...
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): warning MSB8012: TargetPath(C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\game.dll) does not match the Linker's OutputFile property value (C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\SPGamex86.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1218,5): warning MSB8012: TargetName(game) does not match the Linker's OutputFile property value (SPGamex86). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
      Creating library C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\SPGamex86.lib and object C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\SPGamex86.exp
-idLib.lib(BitMsg.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(BitMsg.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(CmdArgs.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(CmdArgs.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Dict.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Dict.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Heap.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Heap.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Lexer.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Lexer.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(LexerFactory.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(LexerFactory.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Lib.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Lib.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(mapfile.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(mapfile.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Parser.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Parser.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Str.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Str.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Timer.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Timer.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Token.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Token.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Bounds.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Bounds.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Box.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Box.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Frustum.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Frustum.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Sphere.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Sphere.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(HashIndex.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(HashIndex.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(JointTransform.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(JointTransform.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Surface.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Surface.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Surface_Patch.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Surface_Patch.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(TraceModel.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(TraceModel.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Winding.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Winding.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Winding2D.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Winding2D.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Angles.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Angles.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Lcp.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Lcp.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Math.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Math.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Matrix.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Matrix.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Ode.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Ode.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Polynomial.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Polynomial.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Quat.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Quat.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Rotation.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Rotation.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_3DNow.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_3DNow.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_generic.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_generic.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_MMX.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_MMX.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_SSE.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_SSE.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_SSE2.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_SSE2.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Simd_SSE3.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Simd_SSE3.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(Vector.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(Vector.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(CRC32.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(CRC32.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(MD4.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(MD4.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
-idLib.lib(MD5.obj) : warning LNK4099: PDB 'idlib.pdb' was not found with 'idLib.lib(MD5.obj)' or at 'C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\idlib.pdb'; linking object as if no debug info
   game.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Quake 4\Source Code\quake4-master\Release\game.dll
