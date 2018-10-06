@@ -181,6 +181,10 @@ private:
 	void					CheckDuck( void );
 	void					CheckLadder( void );
 	bool					CheckJump( void );
+	//OMAR START
+	bool                    canDoubleJump;
+	bool					CheckDoubleJump(void);
+	//OMAR END
 	bool					CheckWaterJump( void );
 	void					SetWaterLevel( void );
 	void					DropTimers( void );

@@ -1296,7 +1296,7 @@ bool idPhysics_Player::CheckJump( void ) { //IMPORTANT JUMPING CHECK
 	groundPlane = false;		// jumping away (NOT ON GROUND)
 	walking = false;			//IN AIR CAN'T WALK
 	//OMAR START
-	
+	canDoubleJump = true;
 	//OMAR END
 	current.movementFlags |= PMF_JUMP_HELD | PMF_JUMPED;	//JUMPING IS ONLY MOVEMENT
 
@@ -1311,6 +1311,59 @@ bool idPhysics_Player::CheckJump( void ) { //IMPORTANT JUMPING CHECK
 
 	return true;	//Allow Jump
 }
+
+//OMAR START (CHRIST HERE WE GO)
+
+/*
+=============
+idPhysics_Player::CheckDoubleJump
+=============
+*/
+bool idPhysics_Player::CheckDoubleJump(void) { //IMPORTANT JUMPING CHECK
+	idVec3 addVelocity;
+
+	//DISABLE JUMP IF.... (MOVING UPWARD, UNRELEASED JUMP BUTTON, OR DUCKING)
+	if (command.upmove < 10) { //COMMAND = BUTTON PRESS
+		// not holding jump button
+		return false;		//Return false = dont jump
+	}
+
+	// must wait for jump to be released
+	if (current.movementFlags & PMF_JUMP_HELD) {
+		return false;
+	}
+
+	// don't jump if we can't stand up
+	if (current.movementFlags & PMF_DUCKED) {
+		return false;
+	}
+
+	//don't jump if cannot double jump
+	if (~canDoubleJump) {
+		return false;
+	}
+
+	//IF ALL OF ABOVE ARE GOOD, THEN RUN JUMP
+	groundPlane = false;		// jumping away (NOT ON GROUND)
+	walking = false;			//IN AIR CAN'T WALK
+	canDoubleJump = false;	//Cannot double jump again
+	current.movementFlags |= PMF_JUMP_HELD | PMF_DOUBLEJUMPED;	//JUMPING IS ONLY MOVEMENT
+
+
+	addVelocity = 2.0f * maxJumpHeight * -gravityVector;     //Actual act of jumping up
+	addVelocity *= idMath::Sqrt(addVelocity.Normalize());  //Multiplier
+	current.velocity += addVelocity;	//Add upward velocity to current velocity
+
+// RAVEN BEGIN
+// bdube: crouch slide, nick maggoire is awesome
+	current.crouchSlideTime = 0;		//No sliding in air
+// RAVEN END
+
+	return true;	//Allow Double Jump
+}
+
+//OMAR END
+
 
 /*
 =============
@@ -1470,7 +1523,10 @@ void idPhysics_Player::MovePlayer( int msec ) {
 	playerSpeed = walkSpeed;
 
 	// remove jumped and stepped up flag
-	current.movementFlags &= ~(PMF_JUMPED|PMF_STEPPED_UP|PMF_STEPPED_DOWN);
+	//OMAR TAMPERING
+	current.movementFlags &= ~(PMF_JUMPED| PMF_DOUBLEJUMPED |PMF_STEPPED_UP|PMF_STEPPED_DOWN);	//default: 	current.movementFlags &= ~(PMF_JUMPED|PMF_STEPPED_UP|PMF_STEPPED_DOWN);
+
+	//OMAR END TAMPERING
 	current.stepUp = 0.0f;
 
 	if ( command.upmove < 10 ) {

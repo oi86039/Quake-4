@@ -9073,6 +9073,19 @@ void idPlayer::Move( void ) {
 		acc->dir[0] = acc->dir[1] = 0;
 	}
 
+	//OMAR START (WTF IS ANYTHING????)
+	
+	if (pfl.doublejump) { //If jumping, Log it (I THINK??????)
+		loggedAccel_t	*acc = &loggedAccel[currentLoggedAccel&(NUM_LOGGED_ACCELS - 1)];
+		currentLoggedAccel++;
+		acc->time = gameLocal.time;
+		acc->dir[2] = 200;
+		acc->dir[0] = acc->dir[1] = 0;
+	}
+	
+	//OMAR END
+
+
 	if ( pfl.onLadder ) {
 		int old_rung = oldOrigin.z / LADDER_RUNG_DISTANCE;
  		int new_rung = physicsObj.GetOrigin().z / LADDER_RUNG_DISTANCE;

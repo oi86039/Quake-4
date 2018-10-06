@@ -921,15 +921,15 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   WorldSpawn.cpp
   AAS.cpp
   Generating Code...
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(240): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(225): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(326): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(263): warning C4750: 'float __thiscall idCurve<class idVec3>::GetLengthBetweenKnots(int,int)const ': function with _alloca() inlined into a loop
-c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\curve.h(285): warning C4750: 'float __thiscall idCurve<class idVec3>::RombergIntegral(float,float,int)const ': function with _alloca() inlined into a loop
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\mover.cpp(2142): warning C4750: 'float __thiscall idCurve<class idVec3>::GetTimeForLength(float,float)const ': function with _alloca() inlined into a loop
   Compiling...
   AAS_Find.cpp
@@ -1506,6 +1506,7 @@ c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\idlib\math\interpolate.h(207): note: see declaration of 'idInterpolateAccelDecelLinear<float>::endValue'
   Physics_Particle.cpp
   Physics_Player.cpp
+c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_player.cpp(1342): warning C4804: '~': unsafe use of type 'bool' in operation
   Physics_RigidBody.cpp
 c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_rigidbody.cpp(695): warning C4458: declaration of 'mass' hides class member
   c:\program files (x86)\steam\steamapps\common\quake 4\source code\quake4-master\game\physics\physics_rigidbody.h(144): note: see declaration of 'idPhysics_RigidBody::mass'
