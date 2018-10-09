@@ -712,6 +712,19 @@ void idPhysics_Player::WalkMove( void ) {
 		return;
 	}
 
+	//OMAR START F*******
+	if (idPhysics_Player::CheckDoubleJump()) {
+		// jumped away
+		if (waterLevel > WATERLEVEL_FEET) {
+			idPhysics_Player::WaterMove();
+		}
+		else {
+			idPhysics_Player::AirMove();
+		}
+		return;
+	}
+	//OMAR END
+
 	idPhysics_Player::Friction();
 
 	scale = idPhysics_Player::CmdScale( command );
