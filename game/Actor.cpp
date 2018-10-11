@@ -2500,7 +2500,7 @@ void idActor::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &dir
 			//annoying hack for StartRagdoll
 			bool saveGibbed = gibbed;
 			bool canDMG_Gib = (spawnArgs.GetBool( "gib" ) | spawnArgs.GetBool( "DMG_gib" ));
-			if ( health < -20 )
+			if ( health < -5 )		//default -20
 			{
 				if ( (spawnArgs.GetBool( "gib" ) && damageDef->GetBool( "gib" )) || 
 					 (canDMG_Gib && damageDef->GetBool( "DMG_gib"))) 
@@ -2510,12 +2510,46 @@ void idActor::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &dir
 			}
 			Killed( inflictor, attacker, damage, dir, location );
 			gibbed = saveGibbed;
-			if ( health < -20 )
+			if ( health < -5 )		//default -20
 			{
 				if ( (spawnArgs.GetBool( "gib" ) && damageDef->GetBool( "gib" )) || 
 					 (canDMG_Gib && damageDef->GetBool( "DMG_gib"))) 
 				{
 					Gib( dir, damageDefName );
+					//OMAR START (CREATE ALL TEH GIBS)
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					Gib(dir, damageDefName);
+					//OMAR END
 				}
 			}
 

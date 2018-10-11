@@ -150,13 +150,13 @@ entityDef weapon_gauntlet
 entityDef weapon_gauntlet_mp
 {
 	"inherit"					"weapon_gauntlet"
-	"muzzle_kick_time"		"0"
-	"muzzle_kick_maxtime"		"0"
-	"muzzle_kick_angles"		"0 0 0"
-	"muzzle_kick_offset"		"0 0 0"
+	"muzzle_kick_time"		"0.3"				//default: 0
+	"muzzle_kick_maxtime"		"0.6"			//default: 0
+	"muzzle_kick_angles"		".5 .4 -.5"		//default: 0
+	"muzzle_kick_offset"		"0 .5 0"		//default: 0
 	"recoilTime"			"0"
 	"recoilAngles"			"0 0 0"
-	"range"						"50"
+	"range"						"350"		//default 50
 }
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -195,8 +195,8 @@ model weapon_gauntlet_world
 
 entityDef damage_gauntlet
 {
-	"damage"					"200"	//default 50
-	"gib"						"1"
+	"damage"					"100"	//default 50
+	"gib"						"500"		//default 1
 
 	"dv_time"					"100"
 	"dv_scale"					".05"

@@ -92,8 +92,8 @@ entityDef weapon_machinegun
 	"inv_icon"					"gfx/guis/hud/icons/item_machinegun.tga"
 	"inv_name"					"#str_107406"
 
-	"fireRate"					".15"	//default: ".1"
-	"spread"					"5"		//default: "2"
+	"fireRate"					".21"	//default: ".1"
+	"spread"					"1.6"		//default: "2"
 
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_machinegun"
 	"def_hitscan"				"hitscan_bullet"
@@ -108,18 +108,18 @@ entityDef weapon_machinegun
 
 	"mtr_icon"					"gfx/guis/hud/icons/gun_machinegun"
 
-	"muzzle_kick_time"			"0.2"
-	"muzzle_kick_maxtime"		"0.6"
-	"muzzle_kick_angles"		"0 0 0"
-	"muzzle_kick_offset"		"0.5 .15 .15"
+	"muzzle_kick_time"			"0.3"	//default .2
+	"muzzle_kick_maxtime"		"0.5"	//default 0.6
+	"muzzle_kick_angles"		"0 0 0"		//default 0 0 0
+	"muzzle_kick_offset"		"-1 5 3" //default 0.5 .15 .15
 
 	"ejectOffset"				"0.5 -1 -1"
 	
 	"ammoRegenStep"				"4"
 	"ammoRegenTime"				"1000"
 
-	"recoilTime"				"250"		//default: "145"
-	"recoilAngles"				"-1 0 0"
+	"recoilTime"				"175"		//default: "145"
+	"recoilAngles"				"-1 0 0"	//default -1 0 0
 	
 	// Mapping of modifications to indexes
   	"def_mod1"					"wpmod_machinegun_ammo"
@@ -391,7 +391,7 @@ entityDef damage_machinegun
 entityDef damage_machinegun_flesh
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"30"		//default: "18"
+	"damage"					"50"		//default: "18"
 }
 
 //---------------------------------------------------------------
@@ -400,14 +400,14 @@ entityDef damage_machinegun_flesh
 entityDef damage_machinegun_zoom
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"50"		//default: "20"
-	"damage_flesh"				"65"		//default: "24"
+	"damage"					"60"		//default: "20"
+	"damage_flesh"				"75"		//default: "24"
 }
 
 entityDef damage_machinegun_zoom_flesh
 {
 	"inherit"					"damage_machinegun"
-	"damage"					"65"		//default: "24"
+	"damage"					"75"		//default: "24"
 }
 
 //---------------------------------------------------------------

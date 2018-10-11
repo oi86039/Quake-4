@@ -748,7 +748,7 @@ entityDef player_marine
 
 	"pm_jumpheight"						"96"		//default: "48"
 	"pm_stepsize"						"16"		//default: "16"
-	"pm_speed"						"250"  	//DOOM speed was 140 (default: "160")
+	"pm_speed"						"300"  	//DOOM speed was 140 (default: "160")
 	"pm_walkspeed"						"140"		//default: "80"
 	"pm_crouchspeed"					"140"		//default: "80"
 	"pm_noclipspeed"					"270"	

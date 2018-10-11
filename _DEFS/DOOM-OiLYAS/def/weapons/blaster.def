@@ -78,11 +78,11 @@ entityDef weapon_blaster
 	"joint_world_flash"			"muzzle_flash"
 
 	// Firing properties
-	"chargeTime"				"3.8"		//default: ".8"
+	"chargeTime"				"0.8"		//default: ".8"
 	"chargeDelay"				".1"
-	"chargeGlow"				"0 6"		//default: "0 .4"
-	"fireRate"					".30"		//default: ".15"
-	"spread"					"20"		//default: ".2"
+	"chargeGlow"				"0 1"		//default: "0 .4"
+	"fireRate"					".25"		//default: ".15"
+	"spread"					"0.5"		//default: ".2"
 
 //	"def_projectile"			"projectile_blaster"
 	"def_hitscan"				"hitscan_blaster"
@@ -106,13 +106,13 @@ entityDef weapon_blaster
 
 	// -------------------- Recoil and Muzzle Kick ---------------------------------------
 
-	"muzzle_kick_time"			"0.1"
-	"muzzle_kick_maxtime"		"0.2"
-	"muzzle_kick_angles"		"-5 0 0"
-	"muzzle_kick_offset"		"2 0 0"
+	"muzzle_kick_time"			"0.3"		//default: 0.1
+	"muzzle_kick_maxtime"		"0.5"		//default = 0.2
+	"muzzle_kick_angles"		"-7 0 0"	//default -5 0 0
+	"muzzle_kick_offset"		"3 0 0"		//default 2 0 0
 
-	"recoilTime"				"300"		//default: "100"
-	"recoilAngles"				"-2 0 0"
+	"recoilTime"				"100"		//default: "100"
+	"recoilAngles"				"-2 0 0"	//default: -2 0 0
 	
 	// ---------------------------- Flashlight ---------------------------------------
 	
@@ -310,11 +310,11 @@ entityDef projectile_blaster_charged
 entityDef damage_blaster
 {
 	"inherit"					"damage_bullet"
-	"damage"					"8"
+	"damage"					"10"		//default 8
 
 	"fx_wound"					"effects/wounds/energy.fx"
 
-	"deathPush"					"100"
+	"deathPush"					"300"		//default 100
 	"deathPushMin"				"2000 250"
 	"deathPushMax"				"5000 500"
 }
@@ -322,7 +322,7 @@ entityDef damage_blaster
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"50"
+	"damage"					"80"		//default :50
 }
 
 entityDef damage_blastersplash_charged

@@ -1546,6 +1546,35 @@ void idAFEntity_Gibbable::SpawnGibs( const idVec3 &dir, const char *damageDefNam
 	// spawn gib items
 	idMoveableItem::DropItems( this, "gib", &list );
 
+	//OMAR START (MOAR GIBS PLS)
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	idAFEntity_Base::DropAFs(this, "gib", &list);
+	idMoveableItem::DropItems(this, "gib", &list);
+	//OMAR END
+
 	// blow out the gibs in the given direction away from the center of the entity
 	entityCenter = GetPhysics()->GetAbsBounds().GetCenter();
 	gibNonSolid = damageDef->GetBool( "gibNonSolid" );
