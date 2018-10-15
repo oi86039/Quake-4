@@ -2569,7 +2569,7 @@ void rvWeapon::Attack( bool altAttack, int num_attacks, float spread, float fuse
 	MuzzleFlash();
 
 	// quad damage overlays a sound
-	if ( owner->PowerUpActive( POWERUP_QUADDAMAGE ) ) {
+	if ( owner->PowerUpActive( POWERUP_QUADDAMAGE ) || owner->PowerUpActive(POWERUP_BESERK)) {
 		viewModel->StartSound( "snd_quaddamage", SND_CHANNEL_VOICE, 0, false, NULL );
 	}
 

@@ -481,6 +481,12 @@ void GiveStuffToPlayer( idPlayer* player, const char* name, const char* value )
 		player->GivePowerUp( POWERUP_QUADDAMAGE, SEC2MS( 30.0f ) );
 		return;
 	}
+	//OMAR START(FAAAA)
+	if (idStr::Icmp(name, "beserk") == 0) {
+		player->GivePowerUp(POWERUP_BESERK, SEC2MS(30.0f));
+		return;
+	}
+	//OMAR END
 
 	if ( idStr::Icmp( name, "invis" ) == 0 ) {
 		player->GivePowerUp( POWERUP_INVISIBILITY, SEC2MS( 30.0f ) );

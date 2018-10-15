@@ -898,8 +898,14 @@ bool idInventory::Give( idPlayer *owner, const idDict &spawnArgs, const char *st
 			// set, don't add. not going over the clip size limit.
 			clip[ i ] = atoi( value );
 		}
-	} else if ( !idStr::Icmp( statname, "quad" ) && !checkOnly ) {
-		GivePowerUp( owner, POWERUP_QUADDAMAGE, SEC2MS( atof( value ) ) );
+	}
+	else if (!idStr::Icmp(statname, "quad") && !checkOnly) {
+		GivePowerUp(owner, POWERUP_QUADDAMAGE, SEC2MS(atof(value)));
+	}
+	//OMAR START (SO SCARED)
+	else if (!idStr::Icmp(statname, "beserk") && !checkOnly) {
+		GivePowerUp(owner, POWERUP_BESERK, SEC2MS(atof(value)));
+	//OMAR END
 	} else if ( !idStr::Icmp( statname, "regen" ) && !checkOnly ) {
 		GivePowerUp( owner, POWERUP_REGENERATION, SEC2MS( atof( value ) ) );
 	} else if ( !idStr::Icmp( statname, "haste" ) && !checkOnly ) {
@@ -4294,6 +4300,24 @@ float idPlayer::PowerUpModifier( int type ) {
 			}
 		}
 	}
+	//OMAR START (LAKJDLKS)
+	if (PowerUpActive(POWERUP_BESERK)) {
+		switch (type) {
+		case PMOD_PROJECTILE_DAMAGE: {
+			mod *= .00001f;
+			break;
+		}
+		case PMOD_MELEE_DAMAGE: {
+			mod *= 999.0f;
+			break;
+		}
+		case PMOD_PROJECTILE_DEATHPUSH: {
+			mod *= .00001f;
+			break;
+		}
+		}
+	}
+	//OMAR END
 
 	if ( PowerUpActive( POWERUP_HASTE ) ) {
 		switch ( type ) {
@@ -4418,6 +4442,23 @@ void idPlayer::StartPowerUpEffect( int powerup ) {
 			break;
 		}
 
+		//OMAR START
+		case POWERUP_BESERK: {
+			powerUpOverlay = quadOverlay;
+
+			StopEffect("fx_regeneration");
+			PlayEffect("fx_quaddamage", animator.GetJointHandle("chest"), true);
+			StartSound("snd_quaddamage_idle", SND_CHANNEL_POWERUP_IDLE, 0, false, NULL);
+
+			// Spawn quad effect
+			powerupEffect = gameLocal.GetEffect(spawnArgs, "fx_quaddamage_crawl");
+			powerupEffectTime = gameLocal.time;
+			powerupEffectType = POWERUP_BESERK;
+
+			break;
+		}
+		//OMAR END
+
 		case POWERUP_REGENERATION: {
 
 			// when buy mode is enabled, we use the guard effect for team powerup regen ( more readable than everyone going red )
@@ -4531,6 +4572,9 @@ void idPlayer::StopPowerUpEffect( int powerup ) {
 	//if the player doesn't have quad, regen, haste or invisibility remaining on him, remove the power up overlay.
 	if( !( 
 		(inventory.powerups & ( 1 << POWERUP_QUADDAMAGE ) ) || 
+		//OMAR START
+		(inventory.powerups & (1 << POWERUP_BESERK)) ||
+		//OMAR END
 		(inventory.powerups & ( 1 << POWERUP_REGENERATION ) ) || 
 		(inventory.powerups & ( 1 << POWERUP_HASTE ) ) || 
 		(inventory.powerups & ( 1 << POWERUP_INVISIBILITY ) ) 
@@ -4549,6 +4593,16 @@ void idPlayer::StopPowerUpEffect( int powerup ) {
 			StopEffect( "fx_quaddamage" );
 			break;
 		}
+		//OMAR START
+		case POWERUP_BESERK: {
+			powerupEffect = NULL;
+			powerupEffectTime = 0;
+			powerupEffectType = 0;
+
+			StopEffect("fx_quaddamage");
+			break;
+		}
+		//OMAR END
 		case POWERUP_REGENERATION: {
 			if ( gameLocal.IsTeamPowerups() ) {
 				teamHealthRegenPending = false;
@@ -4687,6 +4741,13 @@ bool idPlayer::GivePowerUp( int powerup, int time, bool team ) {
 			gameLocal.mpGame.ScheduleAnnouncerSound( AS_GENERAL_QUAD_DAMAGE, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1 );
 			break;
 		}
+		//OMAR START (I DUUNO)
+		case POWERUP_BESERK: {
+			gameLocal.mpGame.ScheduleAnnouncerSound(AS_GENERAL_QUAD_DAMAGE, gameLocal.time, gameLocal.gameType == GAME_TOURNEY ? GetInstance() : -1);
+			break;
+		}
+		//OMAR END
+
 
 		case POWERUP_REGENERATION: {
 			nextHealthPulse = gameLocal.time + HEALTH_PULSE;
@@ -4774,6 +4835,9 @@ void idPlayer::ClearPowerup( int i ) {
 	if( !( 
 			(inventory.powerups & ( 1 << POWERUP_TEAM_DAMAGE_MOD ) ) ||
 			(inventory.powerups & ( 1 << POWERUP_QUADDAMAGE ) ) || 
+		//OMAR START
+		(inventory.powerups & (1 << POWERUP_BESERK)) ||
+		//OMAR END
 			(inventory.powerups & ( 1 << POWERUP_REGENERATION ) ) || 
 			(inventory.powerups & ( 1 << POWERUP_HASTE ) ) || 
 			(inventory.powerups & ( 1 << POWERUP_INVISIBILITY ) ) ||
@@ -9888,7 +9952,7 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 				lastKiller = NULL;
 			}
 
-			if ( health < -20 || killer->PowerUpActive( POWERUP_QUADDAMAGE ) ) {
+			if ( health < -20 || killer->PowerUpActive( POWERUP_QUADDAMAGE ) || killer->PowerUpActive(POWERUP_BESERK)) {
 				gibDeath = true;
 				gibDir = dir;
 				gibsLaunched = false;
@@ -12535,7 +12599,7 @@ void idPlayer::ReadFromSnapshot( const idBitMsgDelta &msg ) {
 		}
 
 		//gib them here
-		if ( health < -20 || ( lastKiller && lastKiller->PowerUpActive( POWERUP_QUADDAMAGE )) )	{	
+		if ( health < -20 || ( lastKiller && lastKiller->PowerUpActive( POWERUP_QUADDAMAGE )) || (lastKiller && lastKiller->PowerUpActive(POWERUP_BESERK)))	{
 			ClientGib( lastDamageDir );
 		}		
 
