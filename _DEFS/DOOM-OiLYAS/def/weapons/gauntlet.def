@@ -140,7 +140,7 @@ entityDef weapon_gauntlet
 	"fx_impact"					"effects/weapons/gauntlet/impact.fx"
 	"fx_impact_flesh"			"effects/weapons/gauntlet/impact_flesh.fx"
 	"fx_impact_monstermetal"	"effects/weapons/gauntlet/impact_monstermetal.fx"
-	"range"						"48"
+	"range"						"75"
 	"fireRate"					".4"
 
 	"has_windup"				"1"

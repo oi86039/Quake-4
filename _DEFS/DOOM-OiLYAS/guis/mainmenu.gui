@@ -894,8 +894,8 @@ windowDef Desktop
 				rect	44,214,314,23
 				visible	1
 				forecolor	1,1,1,0.8
-				text	"#str_200000"
-				textscale	.33
+				text	"NEW GAME"
+				textscale	0.30
 				font	"fonts/marine"
 			}
 			windowDef main_t_b2
@@ -903,17 +903,17 @@ windowDef Desktop
 				rect	44,244,314,23
 				visible	1
 				forecolor	1,1,1,0.8
-				text	"#str_200001"
-				textscale	.33
+				text	"LOAD GAME"
+				textscale	.30
 				font	"fonts/marine"
 			}
 			windowDef main_t_b3
 			{
-				rect	44,274,314,23
+				rect	44,273,314,23
 				visible	1
 				forecolor	1,1,1,0.8
-				text	"#str_200002"
-				textscale	.33
+				text	MULTIPLAYER
+				textscale	.30
 				font	"fonts/marine"
 			}
 			windowDef main_t_b4
@@ -921,8 +921,8 @@ windowDef Desktop
 				rect	44,304,314,23
 				visible	1
 				forecolor	1,1,1,0.8
-				text	"#str_200009"
-				textscale	.33
+				text	SETTINGS
+				textscale	.30
 				font	"fonts/marine"
 			}
 			windowDef main_t_b9
@@ -974,7 +974,7 @@ windowDef Desktop
 				rect	39,403,44,17
 				visible	1
 				forecolor	1,1,1,0.5
-				text	"#str_200010"
+				text	Mod
 				textscale	.22
 				font	"fonts/marine"
 			}
@@ -983,7 +983,7 @@ windowDef Desktop
 				rect	107,403,86,17
 				visible	1
 				forecolor	1,1,1,0.5
-				text	"#str_200011"
+				text	by
 				textscale	.22
 				font	"fonts/marine"
 			}
@@ -992,7 +992,7 @@ windowDef Desktop
 				rect	199,403,80,17
 				visible	1
 				forecolor	1,1,1,0.5
-				text	"#str_200012"
+				text	Omar
 				textscale	.22
 				font	"fonts/marine"
 			}
@@ -1001,7 +1001,7 @@ windowDef Desktop
 				rect	286,403,66,17
 				visible	1
 				forecolor	1,1,1,0.5
-				text	"#str_200013"
+				text	Ilyas
 				textscale	.22
 				font	"fonts/marine"
 			}

@@ -654,7 +654,7 @@ windowDef Desktop
 	}
 	windowDef p_health
 	{
-		rect	-165,-19,340,740
+		rect	-164,-18,340,740
 		visible	("gui::mp" == 0 )
 		windowDef health_backbar
 		{

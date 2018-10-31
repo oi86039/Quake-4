@@ -781,10 +781,10 @@ entityDef player_marine
 
 	// ammo
 	"ammo_railgun"						"20"		//default: 0
-	"ammo_machinegun"					"120"		//default: 0
+	"ammo_machinegun"					"30"		//default: 0
 	"ammo_nailgun"						"120"			//default: 0
 	"ammo_blaster"						"-1"
-	"ammo_shotgun"						"20"		//default: 0
+	"ammo_shotgun"						"6"		//default: 0
 	"ammo_hyperblaster"					"180"			//default: 0
 	"ammo_rocketlauncher"					"15"		//default: 0
 	"ammo_grenadelauncher"					"20"		//default: 0
@@ -793,9 +793,9 @@ entityDef player_marine
 
 	"max_ammo_blaster"					"-1"
 	"max_ammo_railgun"					"50"
-	"max_ammo_machinegun"					"300"
+	"max_ammo_machinegun"					"90"
 	"max_ammo_nailgun"					"300"
-	"max_ammo_shotgun"					"50"
+	"max_ammo_shotgun"					"20"
 	"max_ammo_hyperblaster"					"400"
 	"max_ammo_napalmgun"					"40"
 	"max_ammo_rocketlauncher"				"40"
@@ -851,10 +851,10 @@ entityDef player_marine
 
 	// these used to be hard coded values from id
 	// doom 3 SP values, fatal 65, hard 45, soft 30, no fall 7
-	"fatal_fall_delta"					"65"
-	"hard_fall_delta"					"45"
-	"soft_fall_delta"					"30"
-	"no_fall_delta"						"7" 
+	"fatal_fall_delta"					"130"		//default:65
+	"hard_fall_delta"					"90"		//default:45
+	"soft_fall_delta"					"60"		//default:30
+	"no_fall_delta"						"7" 		//default:7
 	
 	"def_playerView"					"playerView_marine"
 }

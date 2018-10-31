@@ -2322,10 +2322,15 @@ void idActor::Gib( const idVec3 &dir, const char *damageDefName ) {
 	if ( gameLocal.isMultiplayer ) {
 		return;
 	}
-	// only gib once
+	// only gib once HMMMMMM OMAR MEDDLING TIME
+
+/*
 	if ( gibbed ) {
 		return;
 	}
+	*/
+	//MEDLING OVER
+
 	idAFEntity_Gibbable::Gib( dir, damageDefName );
 	if ( head.GetEntity() ) {
 		head.GetEntity()->Hide();
